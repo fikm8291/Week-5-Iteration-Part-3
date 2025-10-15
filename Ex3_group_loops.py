@@ -17,6 +17,9 @@
 # -------------------------------------------
 # Task 1: Collect Multiple Inputs
 # -------------------------------------------
+print("-------------------------------------------\n"
+    + "Task 1: Collect Multiple Inputs\n"
+    + "-------------------------------------------")
 # TODO:
 # 1. Ask the user for the names of three friends (or classmates).
 # 2. Store them in separate variables.
@@ -43,6 +46,9 @@
 
 # Task 2: Number Input and Decisions
 # -------------------------------------------
+print("-------------------------------------------\n"
+    + "Task 2: Number Input and Decisions\n"
+    + "-------------------------------------------")
 # TODO:
 # 1. Ask the user to enter a number between 1 and 10.
 # 2. Use if / elif / else to print:
@@ -76,11 +82,14 @@
 
 # Task 3: Mini Quiz Project Using a List
 # -------------------------------------------
+print("-------------------------------------------\n"
+    + "Task 3: Mini Quiz Project Using a List\n"
+    + "-------------------------------------------")
 # TODO:
 # 1. Ask the user multiple questions.
 # 2. Use a list to store your questions. HINT: Look at Task 1 to see how this is done.
 #    Example of a list:
-#    questions = ["What is 2 + 2?", "Type the color of the sky.", "First letter of the alphabet?"]
+#    questions = ["What is 2 + 2?", "Type the colour of the sky.", "First letter of the alphabet?"]
 # 3. Use a loop to go through the list of questions and ask each one.
 # 4. Use if / elif / else to give feedback for each answer.
 #
@@ -104,6 +113,9 @@
 
 # Extension 1: Input Validation
 # -------------------------------------------
+print("-------------------------------------------\n"
+    + "Extension 1: Input Validation\n"
+    + "-------------------------------------------")
 # TODO:
 # 1. Make sure that text answers are not empty.
 # 2. Make sure number answers are within a valid range.
@@ -120,6 +132,9 @@
 
 # Extension 2: Multiple Feedback Options
 # -------------------------------------------
+print("-------------------------------------------\n"
+    + "Extension 2: Multiple Feedback Options\n"
+    + "-------------------------------------------")
 # TODO:
 # 1. Ask the user to input 1 of at least 3 possible responses. E.g. "Type A, B, or C: "
 # 2. Use if / elif / else to handle different answers.
@@ -139,32 +154,53 @@
 
 # Extension 3: Repeat Quiz for Another User
 # -------------------------------------------
+print("-------------------------------------------\n"
+    + "Extension 3: Repeat Quiz for Another User\n"
+    + "-------------------------------------------")
 # TODO:
-# 1. After one user finishes, ask a new user to enter their name.
-# 2. Repeat the same quiz questions for the new user.
-# 3. Give feedback for each answer using if / elif / else.
-# 4. Loop through all questions for each user.
+# 1. Create a simple mini-quiz first. 
+#    For example, create a list of 2–3 questions:
+#    questions = ["What is 2 + 2?", "What colour is the sky?", "When were women first allowed to vote in the UK?"]
+# 2. Ask the first user to enter their name.
+# 3. Loop through the questions and ask each one.
+#    Use if / elif / else to give feedback for each answer.
+# 4. After the first user finishes, ask for a new user's name.
+#    If they enter a name, repeat the same quiz for the new user.
+#    If they press Enter without typing a name, stop the program.
+# 5. Repeat this until no new name is entered.
 #
-# Example idea:
-# new_user = input("Enter your name: ")
-# for i in questions:
-#     answer = input(i + " ")
-#     # check answer and print feedback
+# HINTS:
+# - Use a while loop to keep asking for new users while the name is not empty.
+# - Inside the while loop, use a for loop to ask each question.
+# - Give feedback for each answer using if / elif / else.
+
+# Example idea (not the answer):
+# questions = ["2 + 2?", "Sky colour?"]
+# user_name = input("Enter your name (or press Enter to stop): ")
+# while user_name != "":
+#     print("Welcome", user_name + "!")
+#     for question in questions:
+#         answer = input(question + " ")
+#         # check answer and print feedback
+#     user_name = input("Enter another user's name (or press Enter to stop): ")
 
 # Write your code below:
 
 
 # -------------------------------------------
-# ADVANCED TASK: Combine Everything
+# ADVANCED ACTIVITY
 # -------------------------------------------
+print("-------------------------------------------\n"
+    + "ADVANCED ACTIVITY\n"
+    + "-------------------------------------------")
 # TODO:
 # 1. Ask the names of three friends and greet each using a loop.
-# 2. Ask the user to enter a number between 1 and 10, with loop validation.
+# 2. Ask the user to enter a number between 1 and 10, with loop validation (keep asking the user for a number until they enter one that is valid).
 # 3. Run a mini-quiz using a list of questions.
 # 4. Use loops to repeat all tasks above and if / elif / else to give feedback.
 # Hint: combine loops and decisions, and you can nest loops inside loops.
 
-# Write your advanced code below:
+# Write your code below:
 
 
 # -------------------------------------------
