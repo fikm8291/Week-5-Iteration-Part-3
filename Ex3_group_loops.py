@@ -1,109 +1,132 @@
 # -------------------------------------------
-# Exercise 3: Group Loops Exercise
+# Exercise 3: Group Loops
 # -------------------------------------------
-# Work in groups of 2–3.
-# You’ll combine everything learned so far:
-# - Variables
-# - Input and Output
-# - Decision Making (if / elif / else)
-# - Loops (while or for)
 #
-# Work together on ONE computer at a time:
-# - Current learner completes the task.
-# - Then git add, commit, and push changes.
-# - Next learner moves to their computer, pulls the repository, and continues.
-# - Repeat until everyone has contributed.
+# GOAL:
+# 1. Combine all skills: Variables, Input, Lists, Loops, and Logic.
+# 2. Practise the "Relay Race" Git workflow in groups.
+#
+# CONCEPT:
+# Real programs rarely use just one concept.
+# - You might use a 'while' loop to validate input.
+# - You might use a 'for' loop to iterate through a list of data.
+# - You might use 'if/else' inside a loop to make decisions.
+#
+# GROUP RULES:
+# - Work together on ONE computer at a time.
+# - Switch computers/drivers after every task.
+# -------------------------------------------
+
 
 # -------------------------------------------
-# Task 1: Collect Multiple Inputs
+# Task 1: The Guest List (Lists & Loops)
 # -------------------------------------------
 print("-------------------------------------------\n"
-    + "Task 1: Collect Multiple Inputs\n"
+    + "Task 1: The Guest List\n"
     + "-------------------------------------------")
+
 # TODO:
-# 1. Ask the user for the names of three friends (or classmates).
-# 2. Store them in separate variables.
-# 3. Use a loop to print a greeting for each friend.
+# 1. Ask the user for the names of three friends (one by one).
+# 2. Store these names in three separate variables.
+# 3. Create a list called 'friends' containing those variables.
+#    Hint: my_list = [var1, var2, var3]
+# 4. Use a 'for' loop to print a greeting for each friend in the list.
 #
-# Example idea:
-# friend1 = Use input() to ask for the name
-# friend2 = ...
-# friend3 = ...
-# friends = [friend1, friend2, friend3]  # put variables in a list
-# for name in friends:
-#     print("Hello " + name)  # loop through and greet
+# Example Output:
+# Hello, Sarah!
+# Hello, Mike!
+# ...
 
 # Write your code below:
 
 
 # -------------------------------------------
-# SWAP COMPUTERS
+# SAVING YOUR WORK
 # -------------------------------------------
-# Hint: save your work and commit it to your repository.
-# Next learner should pull the latest changes before continuing.
+# 1. Save your file.
+# 2. Open the terminal.
+# 3. Run:
+#    git add Ex3_group_loops.py
+#    git commit -m "Completed Task 1 - guest list"
+#    git push origin main
+#
+# *** STOP! ***
+# SWITCH SEATS AND COMPUTERS NOW.
 # -------------------------------------------
 
 
-# Task 2: Number Input and Decisions
 # -------------------------------------------
-print("-------------------------------------------\n"
-    + "Task 2: Number Input and Decisions\n"
+# Task 2: The Range Validator (While & Logic)
+# -------------------------------------------
+# INSTRUCTION: You are now at a new computer.
+# 1. Open the terminal.
+# 2. Run: `git pull origin main`
+
+print("\n-------------------------------------------\n"
+    + "Task 2: The Range Validator\n"
     + "-------------------------------------------")
+
 # TODO:
 # 1. Ask the user to enter a number between 1 and 10.
-# 2. Use if / elif / else to print:
-#    - Message if the number is too low (<1)
-#    - Message if the number is too high (>10)
-#    - Message if the number is in the correct range
-# 3. Use a loop so that if the number is invalid, the user is asked again.
-#
-# Example idea:
-# number = Use input() to ask the user for a number # HINT: When using input(), the user response is always saved as a string
-# while some_condition_is_not_met:
-#     print("Invalid number, try again")
-#     number = Use input() to ask the user for a number
-# if some_condition1:
-#     print("Message for first case")
-# elif some_condition2:
-#     print("Message for second case")
-# else:
-#     print("Message for other cases")
+# 2. Create a 'while' loop that keeps running if the number is valid.
+#    WAIT! actually, we usually loop *while the number is INVALID*.
+#    Logic: "While number is < 1 OR number > 10..."
+# 3. Inside the loop:
+#    - Print "Invalid number, try again."
+#    - Ask for the input again.
+# 4. Outside the loop (when it finishes), print "Number accepted!"
 
 # Write your code below:
 
 
 # -------------------------------------------
-# SWAP COMPUTERS
+# SAVING YOUR WORK
 # -------------------------------------------
-# Hint: save, commit, and push your work before the next learner continues.
-# Next learner should pull first to get your changes.
+# 1. Save your file.
+# 2. Run:
+#    git add Ex3_group_loops.py
+#    git commit -m "Completed Task 2 - validation"
+#    git push origin main
+#
+# *** STOP! ***
+# SWITCH SEATS AND COMPUTERS NOW.
 # -------------------------------------------
 
 
-# Task 3: Mini Quiz Project Using a List
 # -------------------------------------------
-print("-------------------------------------------\n"
-    + "Task 3: Mini Quiz Project Using a List\n"
+# Task 3: The Quiz Master (Iterating Lists)
+# -------------------------------------------
+# INSTRUCTION: Get the code from the previous Driver.
+# 1. Run: `git pull origin main`
+
+print("\n-------------------------------------------\n"
+    + "Task 3: The Quiz Master\n"
     + "-------------------------------------------")
+
 # TODO:
-# 1. Ask the user multiple questions.
-# 2. Use a list to store your questions. HINT: Look at Task 1 to see how this is done.
-#    Example of a list:
-#    questions = ["What is 2 + 2?", "Type the colour of the sky.", "First letter of the alphabet?"]
-# 3. Use a loop to go through the list of questions and ask each one.
-# 4. Use if / elif / else to give feedback for each answer.
-#
-# Example idea:
-# for i in questions:
-#     answer = input(i + " ")
-#     # if answer == "something":
-#     #     print("Good!")
-#     # elif answer == "something else":
-#     #     print("Try again")
-#     # else:
-#     #     print("Check your answer")
+# 1. Create a list called 'questions' with 3 distinct questions.
+#    e.g. questions = ["What is 2+2?", "Colour of the sky?", "Capital of UK?"]
+# 2. Use a 'for' loop to ask every question in the list.
+# 3. Inside the loop:
+#    - Use input() to ask the specific question.
+#    - Use if/else to check the answer (you can decide the correct answers).
+#    - Print "Correct" or "Wrong".
 
 # Write your code below:
+
+
+# -------------------------------------------
+# SAVING YOUR WORK
+# -------------------------------------------
+# 1. Save your file.
+# 2. Run:
+#    git add Ex3_group_loops.py
+#    git commit -m "Completed Task 3 - quiz list"
+#    git push origin main
+#
+# *** STOP! ***
+# SWITCH SEATS AND COMPUTERS NOW.
+# -------------------------------------------
 
 
 # -------------------------------------------
@@ -111,105 +134,88 @@ print("-------------------------------------------\n"
 # -------------------------------------------
 # Keep swapping computers after each extension task.
 
-# Extension 1: Input Validation
+# Extension 1: The Strict Gatekeeper (Empty Strings)
 # -------------------------------------------
-print("-------------------------------------------\n"
-    + "Extension 1: Input Validation\n"
+print("\n-------------------------------------------\n"
+    + "Extension 1: The Strict Gatekeeper\n"
     + "-------------------------------------------")
+
 # TODO:
-# 1. Make sure that text answers are not empty.
-# 2. Make sure number answers are within a valid range.
-# 3. Keep asking until valid input is given.
+# 1. Ask the user for a text input (e.g. "Enter your password").
+# 2. Write a 'while' loop that checks if the input is empty ("").
+# 3. Keep looping until they actually type something.
+# 4. Print "Thank you" when done.
+
+# Write your code below:
+
+
+# Extension 2: Multiple Choice Logic
+# -------------------------------------------
+print("\n-------------------------------------------\n"
+    + "Extension 2: Multiple Choice Logic\n"
+    + "-------------------------------------------")
+
+# TODO:
+# 1. Ask the user to choose "A", "B", or "C".
+# 2. Use a loop to ensure they ONLY type A, B, or C.
+# 3. Once valid, use if/elif/else to give a different response for each letter.
 #
-# Example idea (syntax only):
-# answer = input("Enter something: ")
-# while answer_is_empty:
-#     print("You must type something")
-#     answer = input("Try again: ")
+# Hint: while choice != "A" and choice != "B" and choice != "C":
 
 # Write your code below:
 
 
-# Extension 2: Multiple Feedback Options
+# Extension 3: The Arcade Machine (Nested Loops)
 # -------------------------------------------
-print("-------------------------------------------\n"
-    + "Extension 2: Multiple Feedback Options\n"
+print("\n-------------------------------------------\n"
+    + "Extension 3: The Arcade Machine\n"
     + "-------------------------------------------")
-# TODO:
-# 1. Ask the user to input 1 of at least 3 possible responses. E.g. "Type A, B, or C: "
-# 2. Use if / elif / else to handle different answers.
-# 3. Use the correct type of loop (for/while) to repeat question if input is not valid.
+
+# This is a "Loop inside a Loop".
 #
-# Example idea (syntax only):
-# answer = Use input() to ask for a response
-# if answer == "A":
-#     print something here
-# elif answer == "B":
-#     print something here
-# else:
-#     print something here
-
-# Write your code below:
-
-
-# Extension 3: Repeat Quiz for Another User
-# -------------------------------------------
-print("-------------------------------------------\n"
-    + "Extension 3: Repeat Quiz for Another User\n"
-    + "-------------------------------------------")
 # TODO:
-# 1. Create a simple mini-quiz first. 
-#    For example, create a list of 2–3 questions:
-#    questions = ["What is 2 + 2?", "What colour is the sky?", "When were women first allowed to vote in the UK?"]
-# 2. Ask the first user to enter their name.
-# 3. Loop through the questions and ask each one.
-#    Use if / elif / else to give feedback for each answer.
-# 4. After the first user finishes, ask for a new user's name.
-#    If they enter a name, repeat the same quiz for the new user.
-#    If they press Enter without typing a name, stop the program.
-# 5. Repeat this until no new name is entered.
+# 1. Create an outer 'while' loop that asks for a "Player Name".
+#    - If the name is empty (user just pressed Enter), BREAK the loop (stop game).
+# 2. Inside this loop, run your Quiz code from Task 3 (the 'for' loop).
+# 3. When the quiz finishes, the outer loop should run again for the next player.
 #
-# HINTS:
-# - Use a while loop to keep asking for new users while the name is not empty.
-# - Inside the while loop, use a for loop to ask each question.
-# - Give feedback for each answer using if / elif / else.
-
-# Example idea (not the answer):
-# questions = ["2 + 2?", "Sky colour?"]
-# user_name = input("Enter your name (or press Enter to stop): ")
-# while user_name != "":
-#     print("Welcome", user_name + "!")
-#     for question in questions:
-#         answer = input(question + " ")
-#         # check answer and print feedback
-#     user_name = input("Enter another user's name (or press Enter to stop): ")
+# Structure:
+# while True:
+#     name = input("Player Name (or Enter to quit): ")
+#     if name == "":
+#         break
+#     print(f"Welcome {name}!")
+#     # ... Insert Quiz For-Loop here ...
 
 # Write your code below:
 
 
 # -------------------------------------------
-# ADVANCED ACTIVITY
+# ADVANCED ACTIVITY: The Ultimate Combo
 # -------------------------------------------
-print("-------------------------------------------\n"
-    + "ADVANCED ACTIVITY\n"
+print("\n-------------------------------------------\n"
+    + "ADVANCED ACTIVITY: The Ultimate Combo\n"
     + "-------------------------------------------")
+
 # TODO:
-# 1. Ask the names of three friends and greet each using a loop.
-# 2. Ask the user to enter a number between 1 and 10, with loop validation (keep asking the user for a number until they enter one that is valid).
-# 3. Run a mini-quiz using a list of questions.
-# 4. Use loops to repeat all tasks above and if / elif / else to give feedback.
-# Hint: combine loops and decisions, and you can nest loops inside loops.
+# Combine everything you have learned into one seamless program.
+# 1. Ask the user for a number (validated with a while loop).
+# 2. Generate that many "Friend" slots.
+# 3. Use a loop to ask for the name of each friend.
+# 4. For each friend, ask them a quiz question.
+# 5. Keep score! (Create a 'score' variable and add +1 for correct answers).
+# 6. Print the final results.
 
 # Write your code below:
 
 
 # -------------------------------------------
-# Submitting Your Work
+# SAVING YOUR WORK
 # -------------------------------------------
-# Once your group has completed the exercise and optional extensions:
 # 1. Save your file.
-# 2. Open the terminal and use Git commands to stage, commit, and push your changes.
-#    (Hint: recall the commands for adding, committing, and pushing.)
-# 3. Make sure each learner has pulled the latest changes so that the repository is up to date.
-# 4. Check GitHub to confirm your group's final version appears.
+# 2. Run:
+#    git add Ex3_group_loops.py
+#    git commit -m "Completed extensions and advanced"
+#    git push origin main
+# 3. Check GitHub to confirm your group's final version appears.
 # -------------------------------------------
